@@ -4,6 +4,7 @@
 
 <script lang="ts">
 	import Counter from '$lib/Counter.svelte';
+	import Typewriter from 'svelte-typewriter'
 </script>
 
 <svelte:head>
@@ -19,7 +20,10 @@
 			</picture>
 		</div>
 
-		to your new<br />SvelteKit app
+		<Typewriter loop={4000}>
+			<span>to your new SvelteKit app</span>
+		</Typewriter>
+		
 	</h1>
 
 	<h2>
